@@ -32,7 +32,7 @@ def save_tasks(tasks: list[str]) -> None:
 def add_task_logic(task: str) -> str:
     """Добавляет новую задачу в список и сохраняет изменения"""
     if not task.strip():
-        return ""Текст задачі не може бути порожнім!"
+        return "Текст задачі не може бути порожнім!"
 
     tasks = load_tasks()
     tasks.append(task.strip())
